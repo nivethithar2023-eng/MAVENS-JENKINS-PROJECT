@@ -6,9 +6,13 @@ import static org.junit.Assert.*;
 public class AppTest {
 
     @Test
-    public void testAdd() {
+    public void testCalculateGrade() {
+
         App app = new App();
-        assertEquals(5, app.add(2, 3));
+
+        String result = app.calculateGrade(80, 75, 70);
+
+        assertEquals("B", result);
     }
 
 }
